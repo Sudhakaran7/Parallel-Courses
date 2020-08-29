@@ -1,0 +1,66 @@
+There are N courses, labelled from 1 to N.
+We are given relations[i] = [X, Y], representing a prerequisite relationship between course X and course Y: course X has to be studied before course Y.
+In one semester you can study any number of courses as long as you have studied all the prerequisites for the course you are studying.
+Return the minimum number of semesters needed to study all courses. If there is no way to study all the courses, return -1.
+
+Input Description:
+First line contains, N,m.(1<N,m<100)
+Rest line contains, mx2, m the rows of relations.
+
+Output Description:
+Print the minimum number of semesters needed to study all courses. If there is no way to study all the courses, return -1.
+
+Sample Input:
+3 2
+1 3
+2 3
+
+Sample Output:
+2
+
+Explanation::
+In the first semester, courses 1 and 2 are studied. In the second semester, course 3 is studied.
+
+Sample Input:
+3 3
+1 2
+2 3
+2 1
+
+Sample Output:
+-1
+
+Sample Input:
+5 3
+1 2
+2 1
+3 2
+
+Sample Output:
+-1
+
+Sample Input:
+7 3
+4 5
+5 6
+6 4
+
+Sample Output:
+-1
+
+Sample Input:
+5 2
+3 2
+1 2
+
+Sample Output:
+2
+
+Sample Input:
+8 3
+4 5
+6 5
+7 5
+
+Sample Output:
+2
